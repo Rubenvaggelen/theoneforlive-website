@@ -31,8 +31,16 @@
     },
     {
       "id": "the-one-studio",
-      "status": "windows-1.4.1-upload-in-progress",
-      "note": "1.4.1 portable EXE identified on Surface Pro; new-host distribution and release approval pending."
+      "status": "owner-preview-public-and-music-studio-uploading",
+      "note": "The One Studio 1.1.0 and The One Music Studio Portable 1.4.1 have distinct Windows product names; do not treat as same update channel.",
+      "releases": [
+        {
+          "platform": "windows",
+          "version": "1.1.0",
+          "channel": "owner-preview",
+          "url": "https://github.com/Rubenvaggelen/apps/releases/download/studio-v1.1.0/The-One-Studio-1.1.0-Windows.exe"
+        }
+      ]
     },
     {
       "id": "the-one-cinema",
