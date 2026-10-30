@@ -35,15 +35,21 @@
     {
       "id": "the-one-studio",
       "status": "private-windows-portable-v1.4.1-candidate-verified",
-      "note": "The One Studio 1.1.0 and The One Music Studio Portable 1.4.1 have distinct Windows product names; do not treat as same update channel.",
+      "note": "The One Music Studio latest known Windows build v1.4.1 Setup and Portable (existing protected legacy Dev Hub); The One Studio 1.1.0 preview is a distinct older program.",
       "releases": [
         {
-          "platform": "windows",
-          "version": "1.1.0",
-          "channel": "owner-preview",
-          "url": "https://downloads.theoneforlive.com/the-one-studio/The-One-Studio-1.1.0-Windows-Owner-Preview.exe",
-          "legacy_url": "https://github.com/Rubenvaggelen/apps/releases/download/studio-v1.1.0/The-One-Studio-1.1.0-Windows.exe",
-          "sha256": "66a569cd1473d1cdfbb1d13a693b45344f02cb5149ef0a39106082e6b0b2a39d"
+          "platform": "windows-setup",
+          "version": "1.4.1",
+          "channel": "protected-legacy-devhub",
+          "url": "https://dev.rubenvanaggelen.com/downloads/studio/1.4.1/The-One-Music-Studio-1.4.1-Setup.exe",
+          "sha256": "d017f931231ad4be7215c47390cc9308c1334875b2c4b46b10affa438c67bdf9"
+        },
+        {
+          "platform": "windows-portable",
+          "version": "1.4.1",
+          "channel": "protected-legacy-devhub",
+          "url": "https://dev.rubenvanaggelen.com/downloads/studio/1.4.1/The-One-Music-Studio-1.4.1-Portable.exe",
+          "sha256": "082f1367e72ed1b5895a97a64bff08af4a37a91164a3ce3dbab257ff5d0a14ad"
         }
       ],
       "privateStaging": "verified"
