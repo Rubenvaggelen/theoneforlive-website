@@ -61,6 +61,13 @@
           "platform": "android",
           "version": "944",
           "url": "https://github.com/Rubenvaggelen/apps/releases/download/rutu-bedrijf-v944-status-selectie/RUTU-Bedrijf-v944-Status-Selectie.apk"
+        },
+        {
+          "platform": "windows",
+          "version": "0.4.39",
+          "url": "https://rubenvanaggelen.com/rutu-updates/Rutu-BBQ-Windows.exe",
+          "sha256": "44c28f81d0ef20e8f0f36b94437e342172e1490199817c7c899e97c27d8f3b5c",
+          "delivery": "legacy-update-endpoint"
         }
       ]
     }
