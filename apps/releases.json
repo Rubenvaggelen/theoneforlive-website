@@ -10,12 +10,12 @@
     "rutu-klant",
     "rutu-bedrijf"
   ],
-  "migrationPhase": "private-staging-verified",
+  "migrationPhase": "private-files-staged-sha256-verified",
   "notes": "Seven legacy installers transferred to private access-restricted staging on new Namecheap host; SHA-256 verified. Studio 1.4.1 Windows transfer pending completion. Existing auto-updaters, licensing and APIs remain on old infrastructure; no production cutover.",
   "apps": [
     {
       "id": "the-one-dj",
-      "status": "public-links",
+      "status": "public-release-links-and-private-copies-verified",
       "releases": [
         {
           "platform": "android",
@@ -27,11 +27,12 @@
           "version": "241",
           "url": "https://github.com/Rubenvaggelen/apps/releases/download/dj-windows-v241/The-One-DJ-Windows-v241-WMA.zip"
         }
-      ]
+      ],
+      "privateStaging": "verified"
     },
     {
       "id": "the-one-studio",
-      "status": "owner-preview-public-and-music-studio-uploading",
+      "status": "private-windows-portable-v1.4.1-candidate-verified",
       "note": "The One Studio 1.1.0 and The One Music Studio Portable 1.4.1 have distinct Windows product names; do not treat as same update channel.",
       "releases": [
         {
@@ -40,30 +41,34 @@
           "channel": "owner-preview",
           "url": "https://github.com/Rubenvaggelen/apps/releases/download/studio-v1.1.0/The-One-Studio-1.1.0-Windows.exe"
         }
-      ]
+      ],
+      "privateStaging": "verified"
     },
     {
       "id": "the-one-cinema",
-      "status": "private-staging-verified-not-live"
+      "status": "private-platform-builds-verified-pending-acceptance",
+      "privateStaging": "verified"
     },
     {
       "id": "the-one-tv",
-      "status": "private-staging-verified-not-live"
+      "status": "private-platform-builds-verified-pending-acceptance",
+      "privateStaging": "verified"
     },
     {
       "id": "rutu-klant",
-      "status": "public-links-and-private-staging-verified",
+      "status": "public-release-links-and-private-copies-verified",
       "releases": [
         {
           "platform": "android",
           "version": "940",
           "url": "https://github.com/Rubenvaggelen/apps/releases/download/rutu-klant-v940-bezorging-1830/RUTU-Klant-v940-Bezorgen-1830.apk"
         }
-      ]
+      ],
+      "privateStaging": "verified"
     },
     {
       "id": "rutu-bedrijf",
-      "status": "public-links-and-private-staging-verified",
+      "status": "public-release-links-and-private-copies-verified",
       "releases": [
         {
           "platform": "android",
@@ -77,7 +82,17 @@
           "sha256": "44c28f81d0ef20e8f0f36b94437e342172e1490199817c7c899e97c27d8f3b5c",
           "delivery": "legacy-update-endpoint"
         }
-      ]
+      ],
+      "privateStaging": "verified"
     }
-  ]
+  ],
+  "privateStaging": {
+    "host": "server295.web-hosting.com",
+    "directory": "/home/theobvti/dev.theoneforlive.com/migration-staging-20261030",
+    "filesVerified": 10,
+    "publicDownloadsEnabled": false,
+    "productionCutover": false,
+    "licenseAndUpdaterCutover": false,
+    "verification": "SHA-256 on destination"
+  }
 }
