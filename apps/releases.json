@@ -10,8 +10,8 @@
     "rutu-klant",
     "rutu-bedrijf"
   ],
-  "migrationPhase": "private-files-staged-sha256-verified",
-  "notes": "New private authenticated Dev Hub deployed; stable Rutu binaries copied to downloads.theoneforlive.com and shadow update JSON endpoints confirmed; installed app updater/ licensing endpoints remain unchanged. The One Studio preview and The One Music Studio are distinct products.",
+  "migrationPhase": "partial-production-cutover-rutu-updater-manifests-moved",
+  "notes": "Six-app authenticated Dev Hub deployed. Twelve files verified with SHA-256 in private staging, including separate The One Studio 1.1.0 owner preview and The One Music Studio 1.4.1 archive. Public DJ, Studio preview and Rutu downloads are live on new host. Existing Rutu updater manifest files now point to the new host, with rollback snapshots retained. Other app updater/licensing backends remain unchanged. Legacy BasicAuth account access to the new Dev Hub is pending.",
   "apps": [
     {
       "id": "the-one-dj",
@@ -98,28 +98,32 @@
   "privateStaging": {
     "host": "server295.web-hosting.com",
     "directory": "/home/theobvti/dev.theoneforlive.com/migration-staging-20261030",
-    "filesVerified": 10,
+    "filesVerified": 12,
     "publicDownloadsEnabled": false,
-    "productionCutover": false,
-    "licenseAndUpdaterCutover": false,
+    "productionCutover": "Rutu updater metadata switched; remaining apps pending",
+    "licenseAndUpdaterCutover": "Rutu only; licensing unaffected",
     "verification": "SHA-256 on destination"
   },
   "publicRutuShadowUpdates": {
     "url": "https://downloads.theoneforlive.com/rutu-updates/",
     "verified": true,
-    "productionUpdatersUnchanged": true
+    "productionUpdatersUnchanged": false,
+    "productionUpdaterCutover": true,
+    "legacyManifestUrl": "https://rubenvanaggelen.com/rutu-updates/",
+    "rollbackAvailable": true
   },
   "secureDevHub": {
     "url": "https://dev.theoneforlive.com/apps/",
     "authenticated": true,
     "backedBySha256VerifiedStaging": true,
-    "productionCutover": false
+    "productionCutover": false,
+    "legacyAccountAccessPending": true
   },
   "publicAppDownloads": {
     "base": "https://downloads.theoneforlive.com",
     "djVerified": true,
     "studioOwnerPreviewVerified": true,
     "rutuVerified": true,
-    "autoUpdaterCutover": false
+    "autoUpdaterCutover": "Rutu only; DJ and Studio remain on original mechanisms"
   }
 }
