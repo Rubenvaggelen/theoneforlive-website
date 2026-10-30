@@ -11,7 +11,7 @@
     "rutu-bedrijf"
   ],
   "migrationPhase": "private-files-staged-sha256-verified",
-  "notes": "Seven legacy installers transferred to private access-restricted staging on new Namecheap host; SHA-256 verified. Studio 1.4.1 Windows transfer pending completion. Existing auto-updaters, licensing and APIs remain on old infrastructure; no production cutover.",
+  "notes": "New private authenticated Dev Hub deployed; stable Rutu binaries copied to downloads.theoneforlive.com and shadow update JSON endpoints confirmed; installed app updater/ licensing endpoints remain unchanged. The One Studio preview and The One Music Studio are distinct products.",
   "apps": [
     {
       "id": "the-one-dj",
@@ -61,7 +61,9 @@
         {
           "platform": "android",
           "version": "940",
-          "url": "https://github.com/Rubenvaggelen/apps/releases/download/rutu-klant-v940-bezorging-1830/RUTU-Klant-v940-Bezorgen-1830.apk"
+          "url": "https://downloads.theoneforlive.com/rutu-updates/Rutu-BBQ-Android.apk",
+          "legacy_url": "https://github.com/Rubenvaggelen/apps/releases/download/rutu-klant-v940-bezorging-1830/RUTU-Klant-v940-Bezorgen-1830.apk",
+          "sha256": "3986f6bb6573c4ce0ab347513fa5ffd221c29575d9a76805c23427d481cc98d0"
         }
       ],
       "privateStaging": "verified"
@@ -73,14 +75,17 @@
         {
           "platform": "android",
           "version": "944",
-          "url": "https://github.com/Rubenvaggelen/apps/releases/download/rutu-bedrijf-v944-status-selectie/RUTU-Bedrijf-v944-Status-Selectie.apk"
+          "url": "https://downloads.theoneforlive.com/rutu-updates/Rutu-BBQ-Bedrijf-Android.apk",
+          "legacy_url": "https://github.com/Rubenvaggelen/apps/releases/download/rutu-bedrijf-v944-status-selectie/RUTU-Bedrijf-v944-Status-Selectie.apk",
+          "sha256": "b4b3908fbcf72abf68bfd5c991bb6b2ffb1a83a24e90552dc17debeff2fe146d"
         },
         {
           "platform": "windows",
           "version": "0.4.39",
-          "url": "https://rubenvanaggelen.com/rutu-updates/Rutu-BBQ-Windows.exe",
+          "url": "https://downloads.theoneforlive.com/rutu-updates/Rutu-BBQ-Windows.exe",
           "sha256": "44c28f81d0ef20e8f0f36b94437e342172e1490199817c7c899e97c27d8f3b5c",
-          "delivery": "legacy-update-endpoint"
+          "delivery": "new-domain-staging-public",
+          "legacy_url": "https://rubenvanaggelen.com/rutu-updates/Rutu-BBQ-Windows.exe"
         }
       ],
       "privateStaging": "verified"
@@ -94,5 +99,16 @@
     "productionCutover": false,
     "licenseAndUpdaterCutover": false,
     "verification": "SHA-256 on destination"
+  },
+  "publicRutuShadowUpdates": {
+    "url": "https://downloads.theoneforlive.com/rutu-updates/",
+    "verified": true,
+    "productionUpdatersUnchanged": true
+  },
+  "secureDevHub": {
+    "url": "https://dev.theoneforlive.com/apps/",
+    "authenticated": true,
+    "backedBySha256VerifiedStaging": true,
+    "productionCutover": false
   }
 }
