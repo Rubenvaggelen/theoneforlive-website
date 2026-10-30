@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-10-30",
+  "destination": "https://theoneforlive.com/apps/",
+  "scope": [
+    "the-one-dj",
+    "the-one-studio",
+    "the-one-cinema",
+    "the-one-tv",
+    "rutu-klant",
+    "rutu-bedrijf"
+  ],
+  "migrationPhase": "public-download-page",
+  "notes": "Protected builds, license servers and automatic-update endpoints remain on the existing infrastructure pending destination-server verification.",
+  "apps": [
+    {
+      "id": "the-one-dj",
+      "status": "public-links",
+      "releases": [
+        {
+          "platform": "android",
+          "version": "1050",
+          "url": "https://github.com/Rubenvaggelen/apps/releases/download/dj-v1050/thedj-debug.apk"
+        },
+        {
+          "platform": "windows",
+          "version": "241",
+          "url": "https://github.com/Rubenvaggelen/apps/releases/download/dj-windows-v241/The-One-DJ-Windows-v241-WMA.zip"
+        }
+      ]
+    },
+    {
+      "id": "the-one-studio",
+      "status": "pending-latest-binary-verification",
+      "legacyWebUrl": "https://studio.rubenvanaggelen.com/"
+    },
+    {
+      "id": "the-one-cinema",
+      "status": "protected-build-pending"
+    },
+    {
+      "id": "the-one-tv",
+      "status": "protected-build-pending"
+    },
+    {
+      "id": "rutu-klant",
+      "status": "public-links",
+      "releases": [
+        {
+          "platform": "android",
+          "version": "940",
+          "url": "https://github.com/Rubenvaggelen/apps/releases/download/rutu-klant-v940-bezorging-1830/RUTU-Klant-v940-Bezorgen-1830.apk"
+        }
+      ]
+    },
+    {
+      "id": "rutu-bedrijf",
+      "status": "public-links",
+      "releases": [
+        {
+          "platform": "android",
+          "version": "944",
+          "url": "https://github.com/Rubenvaggelen/apps/releases/download/rutu-bedrijf-v944-status-selectie/RUTU-Bedrijf-v944-Status-Selectie.apk"
+        }
+      ]
+    }
+  ]
+}
