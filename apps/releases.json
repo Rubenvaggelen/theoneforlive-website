@@ -10,8 +10,8 @@
     "rutu-klant",
     "rutu-bedrijf"
   ],
-  "migrationPhase": "public-download-page",
-  "notes": "Protected builds, license servers and automatic-update endpoints remain on the existing infrastructure pending destination-server verification.",
+  "migrationPhase": "private-staging-verified",
+  "notes": "Seven legacy installers transferred to private access-restricted staging on new Namecheap host; SHA-256 verified. Studio 1.4.1 Windows transfer pending completion. Existing auto-updaters, licensing and APIs remain on old infrastructure; no production cutover.",
   "apps": [
     {
       "id": "the-one-dj",
@@ -31,20 +31,20 @@
     },
     {
       "id": "the-one-studio",
-      "status": "latest-portable-located-private",
+      "status": "windows-1.4.1-upload-in-progress",
       "note": "1.4.1 portable EXE identified on Surface Pro; new-host distribution and release approval pending."
     },
     {
       "id": "the-one-cinema",
-      "status": "protected-build-pending"
+      "status": "private-staging-verified-not-live"
     },
     {
       "id": "the-one-tv",
-      "status": "protected-build-pending"
+      "status": "private-staging-verified-not-live"
     },
     {
       "id": "rutu-klant",
-      "status": "public-links",
+      "status": "public-links-and-private-staging-verified",
       "releases": [
         {
           "platform": "android",
@@ -55,7 +55,7 @@
     },
     {
       "id": "rutu-bedrijf",
-      "status": "public-links",
+      "status": "public-links-and-private-staging-verified",
       "releases": [
         {
           "platform": "android",
