@@ -34,22 +34,24 @@
     },
     {
       "id": "the-one-studio",
-      "status": "private-windows-portable-v1.4.1-candidate-verified",
-      "note": "The One Music Studio latest known Windows build v1.4.1 Setup and Portable (existing protected legacy Dev Hub); The One Studio 1.1.0 preview is a distinct older program.",
+      "status": "music-studio-v1.4.1-secure-downloads-available",
+      "note": "Music Studio Windows v1.4.1 Setup and Portable available through password-protected The One For Live downloads. The One Studio v1.1.0 owner preview remains a separate, older build.",
       "releases": [
         {
           "platform": "windows-setup",
           "version": "1.4.1",
-          "channel": "protected-legacy-devhub",
-          "url": "https://dev.rubenvanaggelen.com/downloads/studio/1.4.1/The-One-Music-Studio-1.4.1-Setup.exe",
-          "sha256": "d017f931231ad4be7215c47390cc9308c1334875b2c4b46b10affa438c67bdf9"
+          "channel": "protected-theoneforlive",
+          "url": "https://www.theoneforlive.com/apps/download.php?id=music-studio-setup",
+          "sha256": "d017f931231ad4be7215c47390cc9308c1334875b2c4b46b10affa438c67bdf9",
+          "legacy_url": "https://dev.rubenvanaggelen.com/downloads/studio/1.4.1/The-One-Music-Studio-1.4.1-Setup.exe"
         },
         {
           "platform": "windows-portable",
           "version": "1.4.1",
-          "channel": "protected-legacy-devhub",
-          "url": "https://dev.rubenvanaggelen.com/downloads/studio/1.4.1/The-One-Music-Studio-1.4.1-Portable.exe",
-          "sha256": "082f1367e72ed1b5895a97a64bff08af4a37a91164a3ce3dbab257ff5d0a14ad"
+          "channel": "protected-theoneforlive",
+          "url": "https://www.theoneforlive.com/apps/download.php?id=music-studio-portable",
+          "sha256": "082f1367e72ed1b5895a97a64bff08af4a37a91164a3ce3dbab257ff5d0a14ad",
+          "legacy_url": "https://dev.rubenvanaggelen.com/downloads/studio/1.4.1/The-One-Music-Studio-1.4.1-Portable.exe"
         }
       ],
       "privateStaging": "verified"
