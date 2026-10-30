@@ -20,12 +20,14 @@
         {
           "platform": "android",
           "version": "1050",
-          "url": "https://github.com/Rubenvaggelen/apps/releases/download/dj-v1050/thedj-debug.apk"
+          "url": "https://downloads.theoneforlive.com/the-one-dj/The-One-DJ-Android-v1050.apk",
+          "legacy_url": "https://github.com/Rubenvaggelen/apps/releases/download/dj-v1050/thedj-debug.apk"
         },
         {
           "platform": "windows",
           "version": "241",
-          "url": "https://github.com/Rubenvaggelen/apps/releases/download/dj-windows-v241/The-One-DJ-Windows-v241-WMA.zip"
+          "url": "https://downloads.theoneforlive.com/the-one-dj/The-One-DJ-Windows-v241.zip",
+          "legacy_url": "https://github.com/Rubenvaggelen/apps/releases/download/dj-windows-v241/The-One-DJ-Windows-v241-WMA.zip"
         }
       ],
       "privateStaging": "verified"
@@ -39,7 +41,9 @@
           "platform": "windows",
           "version": "1.1.0",
           "channel": "owner-preview",
-          "url": "https://github.com/Rubenvaggelen/apps/releases/download/studio-v1.1.0/The-One-Studio-1.1.0-Windows.exe"
+          "url": "https://downloads.theoneforlive.com/the-one-studio/The-One-Studio-1.1.0-Windows-Owner-Preview.exe",
+          "legacy_url": "https://github.com/Rubenvaggelen/apps/releases/download/studio-v1.1.0/The-One-Studio-1.1.0-Windows.exe",
+          "sha256": "66a569cd1473d1cdfbb1d13a693b45344f02cb5149ef0a39106082e6b0b2a39d"
         }
       ],
       "privateStaging": "verified"
@@ -110,5 +114,12 @@
     "authenticated": true,
     "backedBySha256VerifiedStaging": true,
     "productionCutover": false
+  },
+  "publicAppDownloads": {
+    "base": "https://downloads.theoneforlive.com",
+    "djVerified": true,
+    "studioOwnerPreviewVerified": true,
+    "rutuVerified": true,
+    "autoUpdaterCutover": false
   }
 }
