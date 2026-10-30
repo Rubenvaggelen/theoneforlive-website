@@ -8,10 +8,11 @@
     "the-one-cinema",
     "the-one-tv",
     "rutu-klant",
-    "rutu-bedrijf"
+    "rutu-bedrijf",
+    "the-one-series"
   ],
   "migrationPhase": "partial-production-cutover-rutu-updater-manifests-moved",
-  "notes": "Six-app authenticated Dev Hub deployed. Twelve files verified with SHA-256 in private staging, including separate The One Studio 1.1.0 owner preview and The One Music Studio 1.4.1 archive. Public DJ, Studio preview and Rutu downloads are live on new host. Existing Rutu updater manifest files now point to the new host, with rollback snapshots retained. Other app updater/licensing backends remain unchanged. Legacy BasicAuth account access to the new Dev Hub is pending.",
+  "notes": "The One Series Android v1.2.2 / Google TV v1.2.6 and The One TV Android v1.0.20 / Google TV v1.0.22 are in the password-protected main site's app download catalogue. Four APK files are SHA-256 verified. Existing TV/Series automatic updaters and licenses stay unchanged; Series E-AC3 playback requires device test.",
   "apps": [
     {
       "id": "the-one-dj",
@@ -62,9 +63,49 @@
       "privateStaging": "verified"
     },
     {
+      "id": "the-one-series",
+      "status": "password-protected-test-apks-sha256-verified",
+      "note": "Series Google TV v1.2.6 is the latest published E-AC3 software fallback release; on-device audio not yet retested; automatic update and licensing unchanged.",
+      "releases": [
+        {
+          "platform": "android",
+          "version": "1.2.2",
+          "url": "https://www.theoneforlive.com/apps/download.php?id=series-android",
+          "sha256": "f15beeee1967c1cf4610104cc7655eb245efa89f07ece046b94374b1731a1eb2",
+          "channel": "protected-test"
+        },
+        {
+          "platform": "google-tv",
+          "version": "1.2.6",
+          "url": "https://www.theoneforlive.com/apps/download.php?id=series-google-tv",
+          "sha256": "b31988fa7b544701713858532576803f714b938fc4e4a8dbb2a2c87b6ac68900",
+          "channel": "protected-test"
+        }
+      ],
+      "automaticUpdaterCutover": false,
+      "licenseCutover": false
+    },
+    {
       "id": "the-one-tv",
-      "status": "private-platform-builds-verified-pending-acceptance",
-      "privateStaging": "verified"
+      "status": "password-protected-test-apks-sha256-verified",
+      "privateStaging": "verified",
+      "releases": [
+        {
+          "platform": "android",
+          "version": "1.0.20",
+          "url": "https://www.theoneforlive.com/apps/download.php?id=tv-android",
+          "sha256": "1102c21b4284df68e6abe55f1b4472e2eadd89200c84ecd6141809d0cf45f7df",
+          "channel": "protected-test"
+        },
+        {
+          "platform": "google-tv",
+          "version": "1.0.22",
+          "url": "https://www.theoneforlive.com/apps/download.php?id=tv-google",
+          "sha256": "ee0d4e756760ef74d99ccbcaf8c3b8b4a6ebd948c5e816196ed72f908b70dd82",
+          "channel": "protected-test"
+        }
+      ],
+      "automaticUpdaterCutover": false
     },
     {
       "id": "rutu-klant",
@@ -106,9 +147,9 @@
   "privateStaging": {
     "host": "server295.web-hosting.com",
     "directory": "/home/theobvti/dev.theoneforlive.com/migration-staging-20261030",
-    "filesVerified": 12,
+    "filesVerified": 14,
     "publicDownloadsEnabled": false,
-    "productionCutover": "Rutu updater metadata switched; remaining apps pending",
+    "productionCutover": "Rutu updater metadata only; TV/Series download-only",
     "licenseAndUpdaterCutover": "Rutu only; licensing unaffected",
     "verification": "SHA-256 on destination"
   },
