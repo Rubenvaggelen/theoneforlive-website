@@ -31,8 +31,8 @@
     },
     {
       "id": "the-one-studio",
-      "status": "pending-latest-binary-verification",
-      "legacyWebUrl": "https://studio.rubenvanaggelen.com/"
+      "status": "latest-portable-located-private",
+      "note": "1.4.1 portable EXE identified on Surface Pro; new-host distribution and release approval pending."
     },
     {
       "id": "the-one-cinema",
